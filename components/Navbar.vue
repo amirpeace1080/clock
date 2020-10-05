@@ -12,33 +12,28 @@
           /></a>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/">
+          <nuxt-link to="/" exact>
             <span class="nav-link">خانه</span>
           </nuxt-link>
         </li>
         <li class="nav-item">
-          <nuxt-link to="/">
-            <span class="nav-link">دسته بندی کالاها</span>
+          <nuxt-link to="/music_boxes">
+            <span class="nav-link">جعبه موسیقی</span>
+          </nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/watches">
+            <span class="nav-link">ساعت مچی</span>
+          </nuxt-link>
+        </li>
+        <li class="nav-item">
+          <nuxt-link to="/clocks">
+            <span class="nav-link">ساعت دیواری</span>
           </nuxt-link>
         </li>
         <li class="nav-item">
           <nuxt-link to="/">
             <span class="nav-link">لوازم آلمانی</span>
-          </nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/">
-            <span class="nav-link">جعبه موسیقی</span>
-          </nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/">
-            <span class="nav-link">ساعت مچی</span>
-          </nuxt-link>
-        </li>
-        <li class="nav-item">
-          <nuxt-link to="/">
-            <span class="nav-link">ساعت دیواری</span>
           </nuxt-link>
         </li>
       </ul>
@@ -103,6 +98,10 @@ export default {}
 </script>
 
 <style lang="scss" scoped>
+.nuxt-link-exact-active{
+  background-color: red;
+}
+
 .nav-size-phone{
   text-decoration: none;
   color: black;
